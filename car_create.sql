@@ -76,7 +76,7 @@ create table repair_parts(
 		--Many parts could be incorperated, thus we had the parts reference the service ticket
 		--Many mechanics could work on many service tickets
 			--For the many-to-many relationship I wanted a middle man table, and that table is mech_work
-	--Lastly contemplated if I wanted 'service history' to be a real table, but decided, it could be called with car join service tickets without needing an actual table (see below)
+	--Lastly contemplated if I wanted 'service history' to be a real table, but decided, it could be called with car join service tickets without needing an actual table (see below), but also mainly the insert file
 
 alter table service_ticket  add serv_desc VARCHAR(400) --Figured this makes sense to add
 
